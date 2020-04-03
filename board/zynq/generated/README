@@ -1,0 +1,7 @@
+This folder contains the FPGA bitstream and generated device trees
+produced by the Xilinx tools.
+
+To create these products:
+- Export Hardware in Vivado and include bistream. Produces a *.xsa archive.
+- Extract the bitstream from the xsa and convert it with Xilinx bootgen tool.
+- Use Vitis to genreate device trees, and copy `pcw.dtsi pl.dtsi system-top.dts` here.
